@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".tela_listview"
+            android:label="@string/title_activity_tela_listview"></activity>
     </application>
 
 </manifest>

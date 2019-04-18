@@ -9,7 +9,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <TextView
             android:id="@+id/Cadastro"
@@ -22,17 +24,14 @@
             android:textSize="30sp" />
 
 
-
-
         <TextView
             android:id="@+id/Nome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="Nome:"
             android:textAlignment="center"
-            android:textSize="20sp"
-            android:layout_marginTop="10dp"
-            />
+            android:textSize="20sp" />
 
 
         <EditText
@@ -65,12 +64,12 @@
             android:id="@+id/Login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="20sp"
             android:layout_marginTop="10dp"
             android:inputType="textEmailAddress"
+            android:text="Login:"
+            android:textAlignment="center"
 
-            android:text="Login:" />
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/txtlogin"
@@ -85,26 +84,24 @@
             android:id="@+id/Senha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="20sp"
             android:layout_marginTop="10dp"
-            android:text="Senha:" />
+            android:text="Senha:"
+            android:textAlignment="center"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/txtsenha"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPassword"
             android:layout_gravity="center"
-            />
+            android:ems="10"
+            android:inputType="textPassword" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
             android:layout_marginTop="100dp"
-            >
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btnincluir"
@@ -119,6 +116,13 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Limpar" />
+
+            <Button
+                android:id="@+id/btnlistview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="listview" />
         </LinearLayout>
 
     </LinearLayout>

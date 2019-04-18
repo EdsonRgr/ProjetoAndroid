@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TelaCadastro</string>
+    <string name="title_activity_tela_listview">tela_listview</string>
 </resources>
