@@ -4,23 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/img1"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="384dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
 
         <TextView
             android:id="@+id/Cadastro"
             android:layout_width="match_parent"
             android:layout_height="56dp"
+            android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:autoSizeMaxTextSize="@android:dimen/app_icon_size"
-            android:text="Cadastro"
+            android:background="@color/colorAccent"
+            android:text="Tela_Cadastro"
             android:textAlignment="center"
+            android:textColor="#fff"
             android:textSize="30sp" />
 
 
@@ -29,46 +32,37 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
             android:text="Nome:"
             android:textAlignment="center"
+            android:textColor="#fff"
             android:textSize="20sp" />
-
 
         <EditText
             android:id="@+id/txtnome"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:background="@drawable/screen_border"
             android:ems="10"
-            android:inputType="textPersonName
-" />
-
-        <TextView
-            android:id="@+id/Email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="E-mail:"
+            android:inputType="textPersonName"
+            android:text="Digite Seu Nome"
             android:textAlignment="center"
-            android:textSize="20sp" />
+            android:textColor="#5e605f"
 
-        <EditText
-            android:id="@+id/txtemail"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:ems="10"
-            android:inputType="textEmailAddress" />
+            />
+
 
         <TextView
             android:id="@+id/Login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
             android:inputType="textEmailAddress"
             android:text="Login:"
             android:textAlignment="center"
-
+            android:textColor="#fff"
             android:textSize="20sp" />
 
         <EditText
@@ -76,17 +70,45 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:background="@drawable/screen_border"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:text="Digite seu Login"
+            android:textAlignment="center"
+            android:textColor="#5e605f" />
 
+        <TextView
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:text="E-mail:"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtemail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/screen_border"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text="exemplo@exemplo.com"
+            android:textAlignment="center"
+            android:textColor="#5e605f" />
 
         <TextView
             android:id="@+id/Senha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
             android:text="Senha:"
             android:textAlignment="center"
+            android:textColor="#fff"
             android:textSize="20sp" />
 
         <EditText
@@ -94,45 +116,62 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:ems="10"
-            android:inputType="textPassword" />
+            android:background="@drawable/screen_border"
+            android:inputType="textPassword"
+            android:maxLength="8"
+            android:text="12345678"
+            android:textAlignment="center"
+            android:textColor="#5e605f" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="100dp"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btnincluir"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
                 android:layout_weight="1"
-                android:text="Incluir" />
+                android:layout_gravity="center"
+                android:text="Incluir"
+                android:background="@drawable/screen_border2"/>
 
             <Button
                 android:id="@+id/btnlimpar"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
                 android:layout_weight="1"
+                android:background="@drawable/screen_border2"
+
                 android:text="Limpar" />
-
-            <Button
-                android:id="@+id/btnlistview"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="listview" />
-
-            <Button
-                android:id="@+id/btnlistar"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="listar"
-                />
-
         </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="315dp"
+        android:layout_marginTop="416dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnlistview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="listview"
+            android:background="@drawable/screen_border2"/>
+
+        <Button
+            android:id="@+id/btnlistar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="listar"
+            android:background="@drawable/screen_border2"/>
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
