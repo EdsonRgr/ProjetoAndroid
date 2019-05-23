@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "239850187119",
+    "firebase_url": "https://aplicacao-c-banco.firebaseio.com",
+    "project_id": "aplicacao-c-banco",
+    "storage_bucket": "aplicacao-c-banco.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239850187119:android:59708ddd639659ae",
+        "android_client_info": {
+          "package_name": "com.example.aluno.aplicao_c_banco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "239850187119-tnbnenprvok38sf2qjguto65m5u2r5m3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aluno.aplicao_c_banco",
+            "certificate_hash": "f1597f572188b0fb43dd37ef49e962d31afe86dd"
+          }
+        },
+        {
+          "client_id": "239850187119-nefcvqkupkqfcppvkkfsjqcube81i9qr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtCiV2BtFhxxEMN_AKwBYuq1TSvT08hrM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "239850187119-nefcvqkupkqfcppvkkfsjqcube81i9qr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
