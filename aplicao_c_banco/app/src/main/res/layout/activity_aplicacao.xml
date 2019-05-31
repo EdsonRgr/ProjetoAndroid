@@ -7,70 +7,112 @@
     tools:context=".aplicacao">
 
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="150dp" />
+        android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/login"
-            android:layout_width="100dp"
+            android:id="@+id/lbEmail"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="Login"
-            android:layout_gravity="center"/>
-
-        <TextView
-            android:id="@+id/email"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
             android:text="E-mail"
-            android:layout_gravity="center" />
-
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            />
         <EditText
-            android:id="@+id/txtemail"
-            android:layout_width="300dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="10"
             android:inputType="textEmailAddress"
-            android:layout_gravity="center"/>
-
-        <TextView
-            android:id="@+id/senha"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:text="Senha"
-            android:layout_gravity="center"/>
-
-        <EditText
-            android:id="@+id/txtsenha"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
             android:ems="10"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:id="@+id/txtEmail"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Senha"
+            android:ems="10"
+            android:id="@+id/lbSenha"
+            android:layout_gravity="center"
+            android:textAlignment="center"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:layout_gravity="center"/>
+            android:ems="10"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:id="@+id/txtPassw"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+
+        <Button
+            android:text="SignUp e Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:id="@+id/btnSingUp"/>
+        <Button
+            android:text="Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:id="@+id/btnLogin"/>
+
+            <TextView
+                android:id="@+id/lbEmailValidoSera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lbEmailValidoSera"
+                tools:text="nao sei se o email he valido" />
 
             <Button
-                android:id="@+id/btnlogin"
-                android:layout_width="wrap_content"
+                android:id="@+id/btnVerifyEmailUser"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Login" />
+                android:text="btnVerifyEmailUser"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
 
             <Button
-                android:id="@+id/btncadastrar"
-                android:layout_width="wrap_content"
+                android:id="@+id/btnAlteraSenha"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Cadastrar" />
+                android:text="btnAlteraSenha"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
 
+            <EditText
+                android:id="@+id/txtNovaSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btnLoggof"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logout" />
+
+            <TextView
+                android:id="@+id/lbUsuarioLogado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Usuario Logado"
+                tools:layout_editor_absoluteX="224dp"
+                tools:layout_editor_absoluteY="274dp" />
+
+            <TextView
+                android:id="@+id/lbEmailDoUsuarioLogado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                tools:layout_editor_absoluteX="223dp"
+                tools:layout_editor_absoluteY="311dp" />
         </LinearLayout>
-    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
